@@ -6,7 +6,9 @@ public abstract class Teacher{
 
 	protected ArrayList<Merit> merits;
 	protected float valoration;	
-	public Teacher(){
+	protected String name;
+	public Teacher(String name){
+		this.name = name;
 		this.merits = new ArrayList<Merit>();
 		this.valoration = 0;
 	}

@@ -13,7 +13,7 @@ public class Main{
         Project project1 = new Project("El puente de " +"Villar del Río",1000000);
         Project project2 = new Project("El acueducto de " +"Villar del Campo",2000000);
         Project project3 = new Project("El sistema de " +"información de " +"Villar del Río",1200000);
-        Titular t1 = new Titular();
+        Titular t1 = new Titular("Juan");
         //Se añaden al profesor los artículos que ha publicado.
         t1.addMerit(article1);
         t1.addMerit(article2);
@@ -22,7 +22,7 @@ public class Main{
         t1.addMerit(project1);
         //Se procede con el catedrático de forma análoga a como
         //se ha procedido con el profesor titular.
-        Cathedratic ct1 = new Cathedratic();
+        Cathedratic ct1 = new Cathedratic("Pedro");
         ct1.addMerit(article3);
         ct1.addMerit(article4);
         ct1.addMerit(project2);

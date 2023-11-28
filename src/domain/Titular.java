@@ -1,8 +1,8 @@
 package domain;
 
 public class Titular extends Teacher{
-    public Titular(){
-        super();
+    public Titular(String name){
+        super(name);
     }
 
     public float calculateValoration(){

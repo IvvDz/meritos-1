@@ -1,8 +1,8 @@
 package domain;
 
 public class Cathedratic extends Teacher{
-    public Cathedratic(){
-        super();
+    public Cathedratic(String name){
+        super(name);
     }
 
     public float calculateValoration(){
