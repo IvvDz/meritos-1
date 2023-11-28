@@ -8,8 +8,11 @@ public class Titular extends Teacher{
     public float calculateValoration(){
         float valoration = 0;
         for(Merit merit : this.merits){
+            //add merit 
             valoration += merit.getValoration();
         }
+        //do arithmetic average
+        valoration = valoration/this.merits.size();
         return valoration;
     }
 }

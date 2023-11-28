@@ -8,8 +8,10 @@ public class Cathedratic extends Teacher{
     public float calculateValoration(){
         float valoration = 0;
         for(Merit merit : this.merits){
-            valoration += merit.getValoration();
+            valoration += (merit.getValoration()*merit.getValoration());
         }
+        //do square root of arithmetic average
+        valoration = (float)Math.sqrt(valoration/this.merits.size());
         return valoration;
     }
 }
