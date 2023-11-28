@@ -2,14 +2,14 @@ package domain;
 
 public class Merit{
 	protected String title;
-	protected double valoration;
+	protected float  valoration;
 
 	public Merit(String title){
 	this.title = title;
 	}
 
 
-	public double getValoration(){
+	public float getValoration(){
 		return this.valoration;
 	}
 

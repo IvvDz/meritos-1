@@ -2,15 +2,19 @@ package domain;
 
 public class Article extends Merit{
 	
-	private double impact;
+	private float impact;
 
 	public Article(String title,double impact){
 		super(title);
-		this.impact = impact;
-		this.valoration = this.impact;
+		this.impact = Float.parseFloat(String.valueOf(impact));
+		this.setValoration(this.impact);
 	}
 
-	public double getValoration(){
+	public void setValoration(float valoration){
+		this.valoration = valoration;
+	}
+
+	public float getValoration(){
 		return this.valoration;
 	}
 	

@@ -7,10 +7,14 @@ public class Project extends Merit{
     public Project(String title,int budget){
         super(title);
         this.budget = budget;
+        this.setValoration(budget);
+    }
+
+    public void setValoration(double valoration){
         this.valoration = budget/100000;
     }
 
-    public double getValoration(){
+    public float getValoration(){
         return this.valoration;
     }
     
