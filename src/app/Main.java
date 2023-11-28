@@ -1,9 +1,6 @@
 package app;
-import dominio.Article;
-import dominio.Project;
-import dominio.Cathedratic;
-import dominio.Titular;
-public class Principal{
+import domain.*;
+public class Main{
     public static void main(String[] args) {
         //El primer parámetro del constructor es el título y, el
         //segundo, el índice de impacto.
