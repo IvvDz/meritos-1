@@ -11,7 +11,12 @@ public class Cathedratic extends Teacher{
             valoration += (merit.getValoration()*merit.getValoration());
         }
         //do square root of arithmetic average
-        valoration = (float)Math.sqrt(valoration/this.merits.size());
+        if(this.merits.size() > 0){
+            valoration = (float)Math.sqrt(valoration/this.merits.size());
+        }
+        else{
+            valoration = 0;
+        }
         return valoration;
     }
 }

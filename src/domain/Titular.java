@@ -12,7 +12,12 @@ public class Titular extends Teacher{
             valoration += merit.getValoration();
         }
         //do arithmetic average
-        valoration = valoration/this.merits.size();
+        if(this.merits.size() > 0){
+            valoration = valoration/this.merits.size();
+        }
+        else{
+            valoration = 0;
+        }
         return valoration;
     }
 }
